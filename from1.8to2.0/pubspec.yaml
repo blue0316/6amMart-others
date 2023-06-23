@@ -1,0 +1,81 @@
+name: sixam_mart
+description: A Multi-vendor Food. Grocery, eCommerce, Pharmacy & Parcel service.
+publish_to: 'none' #
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  get: ^4.6.5
+  shared_preferences: ^2.0.11
+  connectivity: ^3.0.6
+  firebase_core: ^2.4.1
+  firebase_messaging: ^14.2.1
+  flutter_local_notifications: ^13.0.0
+  path_provider: ^2.0.8
+  url_strategy: ^0.2.0
+  pin_code_fields: ^7.3.0
+  geolocator: ^9.0.2
+  google_maps_flutter: ^2.1.5
+  google_maps_flutter_web: ^0.4.0+5
+  flutter_typeahead: ^4.0.0
+  carousel_slider: ^4.0.0
+  shimmer_animation: ^2.1.0+1
+  image_picker: ^0.8.5+3
+  image_picker_ios: ^0.8.5+6
+  universal_html: ^2.0.8
+  universal_ui: ^0.0.8
+  flutter_inappwebview: ^5.7.1
+  flutter_widget_from_html: ^0.8.5
+  fwfh_selectable_text: ^0.8.3+1
+  flutter_html: ^3.0.0-alpha.5
+  url_launcher: ^6.1.2
+  http: ^0.13.4
+  pointer_interceptor: ^0.9.0+1
+  phone_number: ^1.0.0
+  country_code_picker: ^2.0.2
+  cached_network_image: ^3.2.1
+  photo_view: ^0.14.0
+  image_compression_flutter: ^1.0.2
+  dotted_border: ^2.0.0+1
+  share_plus: ^6.3.0
+  fwfh_text_style: ^2.22.8+1
+  expandable_bottom_sheet: ^1.1.1+1
+  google_sign_in: ^5.4.2
+  google_sign_in_web: ^0.10.2
+  flutter_facebook_auth: ^5.0.1
+
+dependency_overrides:
+  modal_bottom_sheet:
+    git:
+      url: https://github.com/danReynolds/modal_bottom_sheet.git
+      path: modal_bottom_sheet
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/image/
+    - assets/language/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/font/Roboto-Regular.ttf
+          weight: 400
+        - asset: assets/font/Roboto-Medium.ttf
+          weight: 500
+        - asset: assets/font/Roboto-Bold.ttf
+          weight: 700
+        - asset: assets/font/Roboto-Black.ttf
+          weight: 900
